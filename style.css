@@ -1,0 +1,65 @@
+body {
+  background-color: #1c1c1c;
+}
+.circle {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+	animation-name: roll;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+}
+
+@keyframes roll{
+	0% {
+		left: 0px;
+	}
+	14%{
+		left: 40px;
+		background-color:yellow;
+	}
+	28%{
+		top: 0;
+		left:42px;
+		background-color:orange;
+	}
+	42%{
+		top: 20px;
+		background-color:purple;
+	}
+	56%{
+		top:40px;
+		background-color: pink;
+	}
+	70%{
+		top:50px;
+		background-color: cyan;
+	}
+	84%{
+		left:57px;
+		background-color:cyan;
+		
+	}
+	100%{
+		top:50px;
+		left:97px;
+		background-color:cyan;
+	}
+}
+.parallelogram {
+  height: 50px;
+  width: 50px;
+  transform: skew(10deg);
+  background-color: cyan;
+}
+
+.shapes {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+	width:200px;
+	overflow: visible;
+}
+
